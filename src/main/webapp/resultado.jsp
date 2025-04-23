@@ -129,8 +129,8 @@ h1 {
             <p>Ficha 2874586 del Sena Centro Minero</p>
             
             <% }else { %>
-            <p> usuario o contraseña incorrectos.</P>
-            <a href ="login.jsp"> Volver a intentar</a>
+            <p> ❌❌❌❌usuario o contraseña incorrectos. ❌❌❌❌</P>
+            <a href ="login.jsp"> Volver a intentar 😭</a>
             <% } %>
             
 
