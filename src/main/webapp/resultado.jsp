@@ -101,7 +101,13 @@ h1 {
 
     </style>
     <body>
-        
+        <h1>${mensaje}</h1>
+        <% 
+            Boolean valido = (Boolean)request.getAttribute("esValido");
+            if (valido != null && valido){
+            
+            %>
+            
             <nav>
                 <ul>
                     <li><a href="login.jsp">login</a></li>
@@ -110,13 +116,6 @@ h1 {
                     <li><a href="ajustes.html">Ajustes</a></li>
                 </ul>
             </nav>
-        <h1>${mensaje}</h1>
-        <% 
-            Boolean valido = (Boolean)request.getAttribute("esValido");
-            if (valido != null && valido){
-            
-            %>
-            
             <p> Bienvenido, admin !</p>
             <p> Has iniciado sesion correctamente.</P>
             
