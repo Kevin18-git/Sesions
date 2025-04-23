@@ -47,5 +47,47 @@
             <input type="submit" value="Guardar en sesión">
         </form>
         
+        <%
+        // Procesar formulario
+        if(request.getMethod().equals("POST")) {
+            String nombre = request.getParameter("nombre");
+            String color = request.getParameter("color");
+            
+            if(nombre != null && !nombre.trim().isEmpty()) {
+                session.setAttribute("nombreUsuario", nombre);
+            }
+            
+            if(color != null && !color.trim().isEmpty()) {
+                session.setAttribute("colorFavorito", color);
+            }
+        }
+        
+        // Mostrar datos guardados
+        String nombreGuardado = (String) session.getAttribute("nombreUsuario");
+        String colorGuardado = (String) session.getAttribute("colorFavorito");
+    %>
+    
+    <% if(nombreGuardado != null || colorGuardado != null) { %>
+        <h2>Datos guardados en sesión:</h2>
+        <% if(nombreGuardado != null) { %>
+            <p>Nombre: <%= nombreGuardado %></p>
+        <% } %>
+        <% if(colorGuardado != null) { %>
+            <p>Color favorito: <%= colorGuardado %></p>
+        <% } %>
+        <form method="post" action="?accion=limpiar">
+            <input type="hidden" name="accion" value="limpiar">
+            <input type="submit" value="Limpiar sesión">
+        </form>
+    <% } %>
+    
+    <%
+        // Limpiar sesión
+        if("limpiar".equals(request.getParameter("accion"))) {
+            session.invalidate();
+            response.sendRedirect("sesiones.jsp");
+        }
+    %>
+
     </body>
 </html>
