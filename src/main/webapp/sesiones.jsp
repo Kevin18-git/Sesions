@@ -11,6 +11,62 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Manejo de sesiones</title>
     </head>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #4a90e2;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        form input[type="text"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ab7;
+        }
+
+        .info-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eef4fb;
+            border-left: 4px solid #4a90e2;
+        }
+    </style>
     <body>
         <h1>Manejo de sesiones</h1>
         
