@@ -16,13 +16,13 @@
         
         <%
             Integer visitas = (Integer)
-            session.getAtribute("contadorVisitas");
+            session.getAttribute("contadorVisitas");
             if (visitas == null){
             visitas = 1;
             }else{
             visitas++;
             }
-            session.setAtribute("contadorVisitas", visitas);
+            session.setAttribute("contadorVisitas", visitas);
             String navegador = request.getHeader("User-Agent");
         %>
         
@@ -30,7 +30,10 @@
         <p>ID de sesión: <% session.getId() %></p>
         <p>numeros de visitas: <% visitas%></p>
         <p><%
-            
+            if (session.getAttribute("primerraVisita") == null){
+            session.setAttribute("primeraVisita", new java.util.Date());
+            }
+            out.print(session.getAttribute("primeraVisita"));
             %></p>
     </body>
 </html>
