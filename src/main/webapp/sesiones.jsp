@@ -27,8 +27,8 @@
         %>
         
         <h2>Información de sesión</h2>
-        <p>ID de sesión: <% session.getId() %></p>
-        <p>numeros de visitas: <% visitas%></p>
+        <p>ID de sesión: <%= session.getId() %></p>
+        <p>numeros de visitas: <%= visitas%></p>
         <p><%
             if (session.getAttribute("primeraVisita") == null){
             session.setAttribute("primeraVisita", new java.util.Date());
