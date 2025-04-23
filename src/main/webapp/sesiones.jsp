@@ -66,6 +66,15 @@
             background: #eef4fb;
             border-left: 4px solid #4a90e2;
         }
+        .botones{
+            background-color: #FF722C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
     </style>
     <body>
         <h1>Manejo de sesiones</h1>
@@ -133,7 +142,7 @@
         <% } %>
         <form method="post" action="?accion=limpiar">
             <input type="hidden" name="accion" value="limpiar">
-            <input type="submit" value="Limpiar sesión">
+            <input class="botones"type="submit" value="Limpiar sesión">
         </form>
     <% } %>
     
