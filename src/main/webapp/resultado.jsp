@@ -99,6 +99,9 @@ h1 {
     margin-bottom: 10px;
 }
 
+.color{
+    color: #F71B2C
+}
     </style>
     <body>
         <h1>${mensaje}</h1>
@@ -129,7 +132,7 @@ h1 {
             <p>Ficha 2874586 del Sena Centro Minero</p>
             
             <% }else { %>
-            <p> ❌❌❌❌usuario o contraseña incorrectos. ❌❌❌❌</P>
+            <p class="color"> ❌❌❌❌usuario o contraseña incorrectos. ❌❌❌❌</P>
             <a href ="login.jsp"> Volver a intentar 😭</a>
             <% } %>
             
