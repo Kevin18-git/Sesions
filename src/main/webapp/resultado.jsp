@@ -111,6 +111,15 @@ h1 {
             <p> Bienvenido, admin !</p>
             <p> Has iniciado sesion correctamente.</P>
             
+            <h1>Inicio</h1>
+            <p>hola, Bienvenido</p>
+            <br></br>
+            <h1>Contactos</h1>
+            <p>3113833535 kevin garcia<br>321312154 Cesar Manosalva</p>
+            <br></br>
+            <h1>informción</h1>
+            <p>Ficha 2874586 del Sena Centro Minero</p>
+            
             <% }else { %>
             <p> usuario o contraseña incorrectos.</P>
             <a href ="login.jsp"> Volver a intentar</a>
@@ -125,13 +134,6 @@ h1 {
                 </ul>
             </nav>
             
-            <h1>Inicio</h1>
-            <p>hola, Bienvenido</p>
-            <br></br>
-            <h1>Contactos</h1>
-            <p>3113833535 kevin garcia<br>321312154 Cesar Manosalva</p>
-            <br></br>
-            <h1>informción</h1>
-            <p>Ficha 2874586 del Sena Centro Minero</p>
+
     </body>
 </html>
