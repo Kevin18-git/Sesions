@@ -30,7 +30,7 @@
         <p>ID de sesión: <% session.getId() %></p>
         <p>numeros de visitas: <% visitas%></p>
         <p><%
-            if (session.getAttribute("primerraVisita") == null){
+            if (session.getAttribute("primeraVisita") == null){
             session.setAttribute("primeraVisita", new java.util.Date());
             }
             out.print(session.getAttribute("primeraVisita"));
