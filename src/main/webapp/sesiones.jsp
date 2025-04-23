@@ -35,5 +35,17 @@
             }
             out.print(session.getAttribute("primeraVisita"));
             %></p>
+        
+        <h2>Información del cliente:</h2>
+        <p>tu navegador es: <%= navegador %></p>
+        <p>tu direccion ip es: <%= request.getRemoteAddr()%></p>
+        
+        <h2>Fomulario para agregar datos de la sesión:</h2>
+        <form method="POST">
+            Nombre: <input type="text" name="nombre"><br></br>
+            Color favorito: <input type="text" name="color"><br></br>
+            <input type="submit" value="Guardar en sesión">
+        </form>
+        
     </body>
 </html>
