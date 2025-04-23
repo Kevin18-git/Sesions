@@ -101,6 +101,15 @@ h1 {
 
     </style>
     <body>
+        
+            <nav>
+                <ul>
+                    <li><a href="login.jsp">login</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="ajustes.html">Ajustes</a></li>
+                </ul>
+            </nav>
         <h1>${mensaje}</h1>
         <% 
             Boolean valido = (Boolean)request.getAttribute("esValido");
@@ -125,14 +134,7 @@ h1 {
             <a href ="login.jsp"> Volver a intentar</a>
             <% } %>
             
-            <nav>
-                <ul>
-                    <li><a href="login.jsp">login</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                    <li><a href="#informacion">Información</a></li>
-                    <li><a href="ajustes.html">Ajustes</a></li>
-                </ul>
-            </nav>
+
             
 
     </body>
